@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require "login.php";
+?>
+
 <!DOCTYPE html>
 <html lang="UTF-8">
     <head> 
@@ -13,17 +18,14 @@
         <link rel="stylesheet" href="design.css">
     </head>
     <body>
-    <div id="fullscreen_bg" class="fullscreen_bg"/>
-        <?php 
-            require "login.php"; 
-            echo $error;
-        ?>
+        <div id="fullscreen_bg" class="fullscreen_bg"/>
 
-        <form class="form-signin" action="login.php" method="post">
-            <h1 class="form-signin-heading text-muted">LOGIN</h1>
-            <input type="text" class="form-control" placeholder="Enter name" required="" name="username" autofocus="">
-            <input type="password" class="form-control" placeholder="Enter password" name="password" required="">
-            <input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Login">
-        </form>
+            <form class="form-signin" action="login.php" method="post">
+                <h1 class="form-signin-heading text-muted">LOGIN</h1>
+                <input type="text" class="form-control" placeholder="Enter name" required="" name="username" autofocus="">
+                <input type="password" class="form-control" placeholder="Enter password" name="password" required="">
+                <input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Login">
+            </form>
+        </div>
     </body>
 </html>
