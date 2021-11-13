@@ -1,0 +1,8 @@
+Hi,
+
+Upong setting up the project. I created a folder on my local machine. Using my xampp to run the file on my browser. Used opera to view and be able to debugged the php/js files.
+Also created a GIT repo for the files.
+
+repo: https://github.com/rgregorio27/creativehope_ass
+
+Thank you!
